@@ -16,6 +16,12 @@ public class Main {
         for (int i = 0; i < n; i++) {
             originalArray[i] = scanner.nextLine();
         }
+        String[] newArray = filterArray(originalArray);
+        System.out.println("Новый массив:");
+        for (String str : newArray) {
+            System.out.println(str);
+        }
+
         scanner.close();
     }
     public static String[] filterArray(String[] array) {
